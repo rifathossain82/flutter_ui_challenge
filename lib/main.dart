@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_chellange/src/home/homepage.dart';
 import 'package:flutter_ui_chellange/src/ui_challenge_one/homeOne.dart';
 
 void main(){
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter UI Challenge',
-      home: HomeOne(),
+      home: Homepage(),
     );
   }
 }
