@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_chellange/src/ui_challenge_six/all_song.dart';
 
 class HomeSix extends StatefulWidget {
   HomeSix({Key? key}) : super(key: key);
@@ -39,15 +40,20 @@ class _HomeSixState extends State<HomeSix> {
                     'Playing Now',
                     style: TextStyle(fontSize: 22, fontWeight: FontWeight.w700, color: Colors.grey),
                   ),
-                  Container(
-                    height: 50,
-                    width: 50,
-                    decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      shape: BoxShape.circle,
-                      boxShadow: shadows,
+                  InkWell(
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>AllSong()));
+                    },
+                    child: Container(
+                      height: 50,
+                      width: 50,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        shape: BoxShape.circle,
+                        boxShadow: shadows,
+                      ),
+                      child: Icon(Icons.menu, color: Colors.grey,),
                     ),
-                    child: Icon(Icons.menu, color: Colors.grey,),
                   ),
                 ],
               ),
