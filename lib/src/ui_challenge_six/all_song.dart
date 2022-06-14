@@ -1,8 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class AllSong extends StatefulWidget {
-  AllSong({Key? key}) : super(key: key);
+  const AllSong({Key? key}) : super(key: key);
 
   @override
   State<AllSong> createState() => _AllSongState();
@@ -39,16 +38,16 @@ class _AllSongState extends State<AllSong> {
                 children: [
 
                   //header title section
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
-                  Text(
+                  const Text(
                     'Skin - FLUMU',
                     style: TextStyle(fontSize: 22, fontWeight: FontWeight.w700, color: Colors.grey),
                   ),
 
                   //image section
-                  SizedBox(height: 20,),
+                  const SizedBox(height: 20,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
@@ -60,7 +59,7 @@ class _AllSongState extends State<AllSong> {
                           shape: BoxShape.circle,
                           boxShadow: shadows,
                         ),
-                        child: Icon(Icons.favorite, color: Colors.grey,),
+                        child: const Icon(Icons.favorite, color: Colors.grey,),
                       ),
                       Container(
                         height: 150,
@@ -69,7 +68,7 @@ class _AllSongState extends State<AllSong> {
                             color: Colors.grey[300],
                             shape: BoxShape.circle,
                             boxShadow: shadows,
-                            image: DecorationImage(
+                            image: const DecorationImage(
                                 image: NetworkImage('https://i.pinimg.com/originals/59/0e/7c/590e7c5fae41782918ef186d106193ef.png')
                             )
                         ),
@@ -82,7 +81,7 @@ class _AllSongState extends State<AllSong> {
                           shape: BoxShape.circle,
                           boxShadow: shadows,
                         ),
-                        child: Icon(Icons.edit, color: Colors.grey,),
+                        child: const Icon(Icons.edit, color: Colors.grey,),
                       ),
                     ],
                   ),
@@ -93,7 +92,7 @@ class _AllSongState extends State<AllSong> {
 
 
             //song list here
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Expanded(
@@ -127,7 +126,7 @@ class _AllSongState extends State<AllSong> {
             shape: BoxShape.circle,
             boxShadow: shadows,
           ),
-          child: Icon(Icons.play_arrow, color: Colors.grey,),
+          child: const Icon(Icons.play_arrow, color: Colors.grey,),
         ),
       ),
     );
@@ -136,11 +135,11 @@ class _AllSongState extends State<AllSong> {
   List<BoxShadow> shadows=[
     BoxShadow(
         color: Colors.grey.shade500,
-        offset: Offset(4,4),
+        offset: const Offset(4,4),
         blurRadius: 15,
         spreadRadius: 1
     ),
-    BoxShadow(
+    const BoxShadow(
         color: Colors.white,
         offset: Offset(-4,-4),
         blurRadius: 15,

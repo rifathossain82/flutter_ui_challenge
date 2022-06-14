@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_ui_chellange/src/ui_challenge_two/model/taskData.dart';
 
 class HomeTwo extends StatelessWidget {
@@ -20,16 +18,16 @@ class HomeTwo extends StatelessWidget {
     final size=MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Color.fromRGBO(0, 196, 192, 1),
+        backgroundColor: const Color.fromRGBO(0, 196, 192, 1),
         body: Padding(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     "My Task",
                     style: TextStyle(
                       fontFamily: "Segoe UI",fontWeight: FontWeight.w700,
@@ -47,7 +45,7 @@ class HomeTwo extends StatelessWidget {
                   )
                 ],
               ),
-              Text(
+              const Text(
                 "You have 3 task today",
                 style: TextStyle(
                   fontFamily: "Segoe UI",
@@ -74,7 +72,7 @@ class HomeTwo extends StatelessWidget {
 
                   },
                   backgroundColor: Colors.white,
-                  child: Icon(Icons.add,size: 40,color: Color.fromRGBO(0, 196, 192, 1),),
+                  child: const Icon(Icons.add,size: 40,color: Color.fromRGBO(0, 196, 192, 1),),
                 ),
               ),
             ],
@@ -89,7 +87,7 @@ class HomeTwo extends StatelessWidget {
       child: Container(
         height: size.height/2,
         width: size.width/1.5,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.all(Radius.circular(20))
         ),
@@ -98,7 +96,7 @@ class HomeTwo extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-               Text(
+               const Text(
                 "Walk",
                 style: TextStyle(
                   fontFamily: "Segoe UI",fontWeight: FontWeight.w700,
@@ -107,7 +105,7 @@ class HomeTwo extends StatelessWidget {
                 ),
               ),
               SizedBox(height: size.height/20,),
-               Text(
+               const Text(
                 "Walk for 30 minutes in\na new rural area ",
                 style: TextStyle(
                   fontFamily: "Segoe UI",fontWeight: FontWeight.w700,
@@ -116,7 +114,7 @@ class HomeTwo extends StatelessWidget {
                 ),
               ),
               SizedBox(height: size.height/22,),
-              Text(
+              const Text(
                 "If you are not in a rural area\nthen at first you have to go in a rural area. Then take a stopwatch and walk for 30 minutes. Remember don't take any rest while you arewalking.",
                 style: TextStyle(
                   fontFamily: "Segoe UI",fontWeight: FontWeight.w700,
@@ -127,8 +125,8 @@ class HomeTwo extends StatelessWidget {
               SizedBox(height: size.height/22,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  new Text(
+                children: const <Widget>[
+                  Text(
                     "3 Comments",
                     style: TextStyle(
                       fontFamily: "Segoe UI",fontWeight: FontWeight.w700,

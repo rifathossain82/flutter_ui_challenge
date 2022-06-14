@@ -9,10 +9,10 @@ class HomeOne extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Padding(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           child: Column(
             children: [
-              Container(
+              SizedBox(
                 height: size.height*0.5,
                 width: size.width,
                 child: Image.network("https://www.tourneau.com/on/demandware.static/-/Sites-master-catalog/default/dw31c4264c/images/large/wjbb0037-cartier-ballon-bleu-de-cartier-36mm-car0355608.png"),
@@ -20,15 +20,14 @@ class HomeOne extends StatelessWidget {
               SizedBox(height: size.height*0.03,),
               Expanded(
                 child: Stack(
-                  alignment: Alignment.bottomCenter,
-                  overflow: Overflow.visible,
+                  clipBehavior: Clip.none, alignment: Alignment.bottomCenter,
                   children: [
                     Container(
-                      padding: EdgeInsets.all(20),
+                      padding: const EdgeInsets.all(20),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
+                        children: const [
                           Text(
                             "CARTIER",
                             style: TextStyle(
@@ -70,8 +69,8 @@ class HomeOne extends StatelessWidget {
                         ],
                       ),
                       decoration: BoxDecoration(
-                        border: Border.all(color: Color(0xffeceaea), width: 5),
-                        borderRadius: BorderRadius.only(
+                        border: Border.all(color: const Color(0xffeceaea), width: 5),
+                        borderRadius: const BorderRadius.only(
                             topRight: Radius.circular(50),
                             topLeft: Radius.circular(50)
                         ),

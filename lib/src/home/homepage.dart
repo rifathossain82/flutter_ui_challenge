@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_chellange/src/ui_challenge_one/homeOne.dart';
+import 'package:flutter_ui_chellange/src/ui_challenge_seven/home_seven.dart';
 import 'package:flutter_ui_chellange/src/ui_challenge_six/home_six.dart';
 import 'package:flutter_ui_chellange/src/ui_challenge_three/homeThree.dart';
 import 'package:flutter_ui_chellange/src/ui_challenge_two/homeTow.dart';
@@ -14,22 +15,24 @@ class Homepage extends StatelessWidget {
     'UI Four',
     'UI Five',
     'UI Six',
+    'UI Seven',
   ];
 
   final uiPage=[
-    HomeOne(),
+    const HomeOne(),
     HomeTwo(),
-    HomeThree(),
-    HomeOne(),
-    HomeOne(),
-    HomeSix(),
+    const HomeThree(),
+    const HomeOne(),
+    const HomeOne(),
+    const HomeSix(),
+    HomeSeven(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Flutter UI Challenge"),
+        title: const Text("Flutter UI Challenge"),
         centerTitle: true,
       ),
       body: ListView.builder(

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class NextThree extends StatelessWidget {
@@ -8,12 +7,12 @@ class NextThree extends StatelessWidget {
   Widget build(BuildContext context) {
     final size=MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Color.fromRGBO(239, 240, 241, 1),
+      backgroundColor: const Color.fromRGBO(239, 240, 241, 1),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: InkWell(onTap:(){Navigator.pop(context);},child: Icon(Icons.arrow_back_rounded, color: Colors.black54,)),
-        actions: [
+        leading: InkWell(onTap:(){Navigator.pop(context);},child: const Icon(Icons.arrow_back_rounded, color: Colors.black54,)),
+        actions: const [
           Icon(Icons.notifications, color: Colors.black,),
           SizedBox(width: 16,)
         ],
@@ -41,7 +40,7 @@ class NextThree extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: size.height*0.01,),
-                Text(
+                const Text(
                   "Afran Nisho",
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
@@ -49,7 +48,7 @@ class NextThree extends StatelessWidget {
                     color:Color(0xff000000),
                   ),
                 ),
-                Text(
+                const Text(
                   "@afran",
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
@@ -91,7 +90,7 @@ class NextThree extends StatelessWidget {
   Widget buildRoomName(String name){
     return Text(
       name,
-      style: TextStyle(
+      style: const TextStyle(
         fontWeight: FontWeight.w700,
         fontSize: 20,
         color:Color(0xff525858),
@@ -101,20 +100,20 @@ class NextThree extends StatelessWidget {
 
   Widget buildCounter(){
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 4),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 4),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        color: Color(0xffffffff),
+        color: const Color(0xffffffff),
         boxShadow: [
           BoxShadow(
-            offset: Offset(0.00,3.00),
-            color: Color(0xff000000).withOpacity(0.16),
+            offset: const Offset(0.00,3.00),
+            color: const Color(0xff000000).withOpacity(0.16),
             blurRadius: 6,
           ),
         ],
       ),
       child: Row(
-        children: [
+        children: const [
           Text(
             "-",
             style: TextStyle(
@@ -148,20 +147,19 @@ class NextThree extends StatelessWidget {
 
   Widget buildDayTime(Size size){
     return Stack(
-      alignment: Alignment.bottomCenter,
-      overflow: Overflow.visible,
+      clipBehavior: Clip.none, alignment: Alignment.bottomCenter,
       children: [
         Container(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           width: size.width,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               color: Color.fromRGBO(20, 67, 62, 1),
               borderRadius: BorderRadius.only(topRight: Radius.circular(30), topLeft: Radius.circular(30))
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 "Day",
                 style: TextStyle(
                   fontWeight: FontWeight.w700,
@@ -190,17 +188,17 @@ class NextThree extends StatelessWidget {
         ),
         Positioned(
           child: Container(
-            padding: EdgeInsets.only(right: 20, left: 20, top: 10),
+            padding: const EdgeInsets.only(right: 20, left: 20, top: 10),
             width: size.width,
             height: size.height*0.16,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 color: Colors.orange,
                 borderRadius: BorderRadius.only(topRight: Radius.circular(30), topLeft: Radius.circular(30))
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   "Time",
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
@@ -212,8 +210,8 @@ class NextThree extends StatelessWidget {
                 Row(
                   children: [
                     buildTime(size, '10:00'),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 5),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 5),
                       child: Text(
                         "-",
                         style: TextStyle(
@@ -248,7 +246,7 @@ class NextThree extends StatelessWidget {
         ),
         child: Text(
           number,
-          style: TextStyle(
+          style: const TextStyle(
             fontWeight: FontWeight.w700,
             fontSize: 20,
             color:Color(0xffffffff),
@@ -269,7 +267,7 @@ class NextThree extends StatelessWidget {
       ),
       child: Text(
         time,
-        style: TextStyle(
+        style: const TextStyle(
           fontWeight: FontWeight.w700,
           fontSize: 20,
           color:Color(0xffffffff),

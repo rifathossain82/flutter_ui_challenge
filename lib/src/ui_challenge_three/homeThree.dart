@@ -9,7 +9,7 @@ class HomeThree extends StatelessWidget {
   Widget build(BuildContext context) {
     final size=MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Color.fromRGBO(20, 67, 62, 1),
+      backgroundColor: const Color.fromRGBO(20, 67, 62, 1),
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -22,7 +22,7 @@ class HomeThree extends StatelessWidget {
             ),
 
             SizedBox(height: size.height*0.06),
-            Text(
+            const Text(
               "Provide You",
               style: TextStyle(
                 fontWeight: FontWeight.w700,
@@ -36,18 +36,18 @@ class HomeThree extends StatelessWidget {
               style: TextStyle(
                 fontWeight: FontWeight.w700,
                 fontSize: 40,
-                color:Color(0xffffffff),
+                color:const Color(0xffffffff),
                 shadows: [
                   Shadow(
-                    offset: Offset(0.00,3.00),
-                    color: Color(0xff000000).withOpacity(0.16),
+                    offset: const Offset(0.00,3.00),
+                    color: const Color(0xff000000).withOpacity(0.16),
                     blurRadius: 6,
                   ),
                 ],
               ),
             ),
             SizedBox(height: size.height*0.004,),
-            Text(
+            const Text(
               "Service",
               style: TextStyle(
                 fontWeight: FontWeight.w700,
@@ -67,7 +67,7 @@ class HomeThree extends StatelessWidget {
   Widget buildButton(Size size, BuildContext context){
     return InkWell(
       onTap: (){
-        Navigator.push(context, MaterialPageRoute(builder: (context)=>NextThree()));
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>const NextThree()));
       },
       child: Container(
         width: size.width*0.4,
@@ -75,10 +75,10 @@ class HomeThree extends StatelessWidget {
         alignment: Alignment.center,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: Color(0xffff9b04),
-          border: Border.all(width: 1.00, color: Color(0xff707070),),
+          color: const Color(0xffff9b04),
+          border: Border.all(width: 1.00, color: const Color(0xff707070),),
         ),
-        child: Text(
+        child: const Text(
           "GO",
           style: TextStyle(
             fontWeight: FontWeight.w700,
