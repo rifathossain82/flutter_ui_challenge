@@ -1,9 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_chellange/src/ui_challenge_eight/detailsItem.dart';
 
 class HomeEight extends StatefulWidget {
-  HomeEight({Key? key}) : super(key: key);
+  const HomeEight({Key? key}) : super(key: key);
 
   @override
   State<HomeEight> createState() => _HomeEightState();
@@ -37,7 +36,7 @@ class _HomeEightState extends State<HomeEight> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     'For You',
                     style: TextStyle(
                       fontWeight: FontWeight.w700,
@@ -53,23 +52,22 @@ class _HomeEightState extends State<HomeEight> {
                       boxShadow: shadows,
                       color: Colors.grey[300]
                     ),
-                    child: Icon(Icons.home),
+                    child: const Icon(Icons.home),
                   )
                 ],
               ),
 
               //image
-              SizedBox(height: 20,),
+              const SizedBox(height: 20,),
               Stack(
-                alignment: Alignment.bottomCenter,
-                overflow: Overflow.visible,
+                clipBehavior: Clip.none, alignment: Alignment.bottomCenter,
                 children: [
                   Container(
                     width: size.width,
                     height: size.height*0.3,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      image: DecorationImage(
+                      image: const DecorationImage(
                         image: NetworkImage(
                           'https://cdn.britannica.com/17/83817-050-67C814CD/Mount-Everest.jpg'
                         ),
@@ -81,7 +79,7 @@ class _HomeEightState extends State<HomeEight> {
                     bottom: -size.height*0.08,
                     child: Container(
                       alignment: Alignment.centerLeft,
-                      padding: EdgeInsets.only(left: 16),
+                      padding: const EdgeInsets.only(left: 16),
                       width: size.width*0.82,
                       height: size.height*0.15,
                       decoration: BoxDecoration(
@@ -133,7 +131,7 @@ class _HomeEightState extends State<HomeEight> {
 
               //tab bar
               SizedBox(height: size.height*0.12,),
-              Container(
+              SizedBox(
                 height: size.height*0.12,
                 child: ListView.builder(
                   shrinkWrap: true,
@@ -182,7 +180,7 @@ class _HomeEightState extends State<HomeEight> {
         borderRadius: BorderRadius.circular(4),
         child: Container(
           height: 40,
-          padding: EdgeInsets.symmetric(horizontal: 4),
+          padding: const EdgeInsets.symmetric(horizontal: 4),
           alignment: Alignment.center,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(4),
@@ -191,7 +189,7 @@ class _HomeEightState extends State<HomeEight> {
           ),
           child: Text(
             tabItem[index],
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 18,
             ),
           ),
@@ -205,19 +203,19 @@ class _HomeEightState extends State<HomeEight> {
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: InkWell(
         onTap: (){
-          Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailsItem()));
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>const DetailsItem()));
         },
         borderRadius: BorderRadius.circular(4),
         child: Card(
           child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(4),
                 color: Colors.grey[300]
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
+              children: const [
                 Text(
                   'Health Yoga',
                   style: TextStyle(
@@ -249,9 +247,9 @@ class _HomeEightState extends State<HomeEight> {
       blurRadius: 16,
       spreadRadius: 1
     ),
-    BoxShadow(
+    const BoxShadow(
         color: Colors.white,
-        offset: const Offset(-4,-4),
+        offset: Offset(-4,-4),
         blurRadius: 16,
         spreadRadius: 1
     )

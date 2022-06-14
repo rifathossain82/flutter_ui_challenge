@@ -30,8 +30,8 @@ class Homepage extends StatelessWidget {
     const HomeOne(),
     const HomeSix(),
     HomeSeven(),
-    HomeEight(),
-    HomeNine(),
+    const HomeEight(),
+    const HomeNine(),
   ];
 
   @override

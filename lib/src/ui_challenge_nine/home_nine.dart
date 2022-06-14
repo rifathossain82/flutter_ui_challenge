@@ -36,7 +36,7 @@ class _HomeNineState extends State<HomeNine> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
-          children: [
+          children: const [
 
             //profile section
             CircleAvatar(
@@ -78,7 +78,7 @@ class _HomeNineState extends State<HomeNine> {
       right: status? -150 : 0,
 
       child: Container(
-        padding: EdgeInsets.only(bottom: 10, top: 5),
+        padding: const EdgeInsets.only(bottom: 10, top: 5),
         decoration: BoxDecoration(
           borderRadius: status ? BorderRadius.circular(20) : BorderRadius.zero,
           color: Colors.white
@@ -95,7 +95,7 @@ class _HomeNineState extends State<HomeNine> {
                       status =! status;
                     });
                   },
-                  icon: Icon(Icons.menu),
+                  icon: const Icon(Icons.menu),
                 ),
                 Text(
                   'Side Navigation ',
@@ -104,7 +104,7 @@ class _HomeNineState extends State<HomeNine> {
               ],
             ),
 
-            SizedBox(height: 10 ,),
+            const SizedBox(height: 10 ,),
 
             //body
             Expanded(
@@ -119,7 +119,7 @@ class _HomeNineState extends State<HomeNine> {
           ],
         ),
       ),
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 1),
     );
   }
 
@@ -130,7 +130,7 @@ class _HomeNineState extends State<HomeNine> {
         height: 200,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          image: DecorationImage(
+          image: const DecorationImage(
             image: NetworkImage(
               'https://images.unsplash.com/photo-1611329532992-0b7ba27d85fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnR8ZW58MHx8MHx8&w=1000&q=80',
             ),
