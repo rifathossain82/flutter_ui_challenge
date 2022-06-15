@@ -4,6 +4,7 @@ import 'package:flutter_ui_chellange/src/ui_challenge_nine/home_nine.dart';
 import 'package:flutter_ui_chellange/src/ui_challenge_one/homeOne.dart';
 import 'package:flutter_ui_chellange/src/ui_challenge_seven/home_seven.dart';
 import 'package:flutter_ui_chellange/src/ui_challenge_six/home_six.dart';
+import 'package:flutter_ui_chellange/src/ui_challenge_ten/home_ten.dart';
 import 'package:flutter_ui_chellange/src/ui_challenge_three/homeThree.dart';
 import 'package:flutter_ui_chellange/src/ui_challenge_two/homeTow.dart';
 
@@ -20,6 +21,7 @@ class Homepage extends StatelessWidget {
     'UI Seven',
     'UI Eight',
     'UI Nine',
+    'UI Ten',
   ];
 
   final uiPage=[
@@ -32,6 +34,7 @@ class Homepage extends StatelessWidget {
     HomeSeven(),
     const HomeEight(),
     const HomeNine(),
+    const HomeTen(),
   ];
 
   @override
