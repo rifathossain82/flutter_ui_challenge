@@ -64,12 +64,12 @@ class _HomeSixState extends State<HomeSix> {
                 height: 150,
                 width: 150,
                 decoration: BoxDecoration(
-                  color: Colors.grey[300],
-                  shape: BoxShape.circle,
-                  boxShadow: shadows,
-                  image: const DecorationImage(
-                    image: NetworkImage('https://i.pinimg.com/originals/59/0e/7c/590e7c5fae41782918ef186d106193ef.png')
-                  )
+                    color: Colors.grey[300],
+                    shape: BoxShape.circle,
+                    boxShadow: shadows,
+                    image: const DecorationImage(
+                        image: NetworkImage('https://i.pinimg.com/originals/59/0e/7c/590e7c5fae41782918ef186d106193ef.png')
+                    )
                 ),
               ),
               const SizedBox(height: 8,),
@@ -149,10 +149,10 @@ class _HomeSixState extends State<HomeSix> {
 
   List<BoxShadow> shadows=[
     BoxShadow(
-      color: Colors.grey.shade500,
-      offset: const Offset(4,4),
-      blurRadius: 15,
-      spreadRadius: 1
+        color: Colors.grey.shade500,
+        offset: const Offset(4,4),
+        blurRadius: 15,
+        spreadRadius: 1
     ),
     const BoxShadow(
         color: Colors.white,

@@ -8,7 +8,7 @@ class AllSong extends StatefulWidget {
 }
 
 class _AllSongState extends State<AllSong> {
-  
+
   List<SongData> songList=[
     SongData('Helix', 'Flime'),
     SongData('Never be like you', 'Flumu- kli'),
